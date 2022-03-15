@@ -42,12 +42,32 @@ a:hover {
     margin-left: 24px;
 }
 
+@media (max-width: 800px) {
+    .navbar > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 24px;
+}
+}
+
 .navbar li + li {
     margin-left: 18px;
 }
 
+@media (max-width: 800px) {
+    .navbar li + li {
+    margin-left: 18px;
+}
+}
 .navbar a {
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .navbar a {
+    text-decoration: none;
+    flex-flow: row nowrap;
+    }
 }
 
 .navbar a:hover {
