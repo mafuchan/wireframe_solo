@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 body {
     font-family: "Roboto", sans-serif;
-    display: grid;
-    grid-template-rows: auto 80vh auto;
+    
 }
 
 
@@ -67,7 +67,7 @@ a:hover {
     background-color: white;
     color: black;
     padding: 12px;
-    border: 2px black;
+    border: 5px black;
 }
 
 img {
@@ -76,6 +76,10 @@ img {
 
 .hero_image {
     position: relative;
+}
+
+.hero_image img {
+    filter: contrast(60%);
 }
 
 .hero_image .call_to_action {
@@ -89,7 +93,8 @@ img {
 }
 
 .call_to_action p {
-    font-size: 36px;
+    font-size: 40px;
+    font-family: "EB Garamond", serif;
 }
 
 .call_to_action a {
@@ -113,3 +118,59 @@ img {
     border: 2px black;
 }
 
+main {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "EB Garamond", serif;
+}
+
+h3{
+    font-family: "Roboto", sans-serif, weight= 500;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+main > div {
+    margin-bottom: 18px;
+}
+
+.benefit1 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.benefit2 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.benefit3 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.benefit4 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+main > * {
+    padding: 18px;
+}
+
+main .buttons {
+    margin-bottom: 25px;
+    background-color: darkgreen;
+    color: white;
+    padding: 12px;
+}
